@@ -1,0 +1,200 @@
+{
+  "start_date": "2014-01-01",
+  "data_center_path": "D:\\trade3",
+  "backtest_name": "26分享会小市值组合",
+  "strategy_list": [
+    {
+      "name": "小市值_基本面优化1",
+      "hold_period": "W",
+      "offset_list": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "select_num": 5,
+      "cap_weight": 0.25,
+      "rebalance_time": "open",
+      "factor_list": [
+        [
+          "市值",
+          true,
+          "",
+          0.5
+        ],
+        [
+          "归母净利润同比增速",
+          false,
+          60,
+          0.5
+        ]
+      ],
+      "filter_list": [
+        [
+          "ROE",
+          "单季",
+          "pct:<=0.8",
+          true
+        ],
+        [
+          "成交额Mean",
+          5,
+          "pct:>=0.05",
+          true
+        ],
+        [
+          "一级风险标签",
+          250,
+          "val:==0",
+          true
+        ]
+      ]
+    },
+    {
+      "name": "小市值_量价优化1",
+      "hold_period": "W",
+      "offset_list": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "select_num": 5,
+      "cap_weight": 0.25,
+      "rebalance_time": "open",
+      "factor_list": [
+        [
+          "Ret",
+          true,
+          20,
+          0.333333
+        ],
+        [
+          "市值",
+          true,
+          "",
+          0.333333
+        ],
+        [
+          "成交额Std",
+          true,
+          5,
+          0.333333
+        ]
+      ],
+      "filter_list": [
+        [
+          "成交额Mean",
+          5,
+          "pct:>=0.05",
+          true
+        ],
+        [
+          "一级风险标签",
+          250,
+          "val:==0",
+          true
+        ]
+      ]
+    },
+    {
+      "name": "小市值_量价优化1",
+      "hold_period": "W",
+      "offset_list": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "select_num": 5,
+      "cap_weight": 0.25,
+      "rebalance_time": "open",
+      "factor_list": [
+        [
+          "Ret",
+          true,
+          20,
+          0.333333
+        ],
+        [
+          "市值",
+          true,
+          "",
+          0.333333
+        ],
+        [
+          "成交额Std",
+          true,
+          5,
+          0.333333
+        ]
+      ],
+      "filter_list": [
+        [
+          "成交额Mean",
+          5,
+          "pct:>=0.05",
+          true
+        ],
+        [
+          "一级风险标签",
+          250,
+          "val:==0",
+          true
+        ]
+      ]
+    },
+    {
+      "name": "小市值_量价优化2",
+      "hold_period": "W",
+      "offset_list": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "select_num": 5,
+      "cap_weight": 0.25,
+      "rebalance_time": "open",
+      "factor_list": [
+        [
+          "当前回撤",
+          true,
+          20,
+          0.333333
+        ],
+        [
+          "市值",
+          true,
+          "",
+          0.333333
+        ],
+        [
+          "成交额Std",
+          true,
+          5,
+          0.333333
+        ]
+      ],
+      "filter_list": [
+        [
+          "成交额Mean",
+          5,
+          "pct:>=0.05",
+          true
+        ]
+      ]
+    }
+  ],
+  "excluded_boards": [
+    "bj"
+  ],
+  "total_cap_usage": 1,
+  "initial_cash": 10000000,
+  "c_rate": 0.00012,
+  "t_rate": 0.001
+}
