@@ -1,0 +1,1 @@
+https://docs.cherry-ai.com/advanced-basic/agent-an-li/jin-jia-bao-die-kan-meng-le-wo-yong-kimi-k2.5-+-cherry-studio-zuo-le-ge-fu-pan-shen-qi-fu-agent-she
