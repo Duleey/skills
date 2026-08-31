@@ -3,3 +3,7 @@ vedic-astro-skills-main/
 
 # 不跟踪 huashu-design 下的 .DS_Store
 huashu-design/.DS_Store
+
+# 不跟踪 ark 下的 byted-ark-seedance-skill 目录
+ark/byted-ark-seedance-skill/
+ark/byted-ark-seedream-skill
